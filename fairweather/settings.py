@@ -25,9 +25,10 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = 'django-insecure-d+&e_qts!+ep1i%#w=$)_e^chru7d6ma_2lt2@y6q3ao8c#gb^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
+    'fairweathercast.herokuapp.com'
 ]
 
 
