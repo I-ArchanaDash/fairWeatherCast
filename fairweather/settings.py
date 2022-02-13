@@ -15,7 +15,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_DIR= os.path.join(BASE_DIR, 'static')
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 #STATIC_DIR = os.path.join(BASE_DIR,'static')
 # Quick-start development settings - unsuitable for production
@@ -28,7 +28,6 @@ SECRET_KEY = 'django-insecure-d+&e_qts!+ep1i%#w=$)_e^chru7d6ma_2lt2@y6q3ao8c#gb^
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'fairweathercast.herokuapp.com'
 ]
 
 
@@ -125,7 +124,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    STATIC_DIR,
 )
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
