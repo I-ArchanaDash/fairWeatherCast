@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-d+&e_qts!+ep1i%#w=$)_e^chru7d6ma_2lt2@y6q3ao8c#gb^
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'fairweathercast.herokuapp.com'
+    'fairweathercast.herokuapp.com',
 ]
 
 
