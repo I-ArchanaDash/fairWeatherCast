@@ -20,9 +20,9 @@ def index(request):
             "pressure": str(list_of_data['main']['pressure']) + 'mbar',
             "humidity": str(list_of_data['main']['humidity']) + '%',
             "windspeed": str(list_of_data['wind']['speed']) + 'km/h',
-            'main': str(list_of_data['weather'][0]['main']),
-            'description': str(list_of_data['weather'][0]['description']),
-            'icon': list_of_data['weather'][0]['icon'],
+            "main": str(list_of_data['weather'][0]['main']),
+            "description": str(list_of_data['weather'][0]['description']),
+            "icon": list_of_data['weather'][0]['icon'],
         }
         print(data)
     else:
