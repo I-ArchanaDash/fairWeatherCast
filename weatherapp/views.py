@@ -13,6 +13,7 @@ def index(request):
         list_of_data = json.loads(source)
 
         data = {
+            "name":str(list_of_data['name']),
             "country_code": str(list_of_data['sys']['country']),
             "coordinate": str(list_of_data['coord']['lon']) + ', '
             + str(list_of_data['coord']['lat']),
